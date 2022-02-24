@@ -23,13 +23,14 @@
 <header class="header">
 
     <a href="#" class="content">
-   <h1>Samkele M</h1>
+   <img src="images/coding ninja-logos_black.png" alt="" width="90px">
     </a>
 
     <nav class="navbar">
         <a href="#home">home</a>
-        <a href="#about">about</a>
-        <a href="#contact">contact</a>
+        <a href="about.html">about</a>
+        <a href="contact.html">contact</a>
+        <img src="images/sun.png" alt="" width="20px" cursor="pointer" id="icon">
     </nav>
 
 
@@ -40,17 +41,13 @@
 
 <!-- home section starts  -->
 
-<section class="home" id="home">
 
- 
-
-</section>
 
 <!-- home section ends -->
 
 <!-- about section starts  -->
 
-<section class="about" id="about">
+<section class="about" >
 
     <h1 class="heading"> <span>about</span> me </h1>
 
@@ -64,12 +61,13 @@
             <h3>Samkele Mabaso</h3>
             <p>Samkele Mabaso is a 20 year old aspiring software developer.I grew up in Phiri,Soweto.</p>
             <p>I am really grateful the codetribe decided to give the opportunity to showcase my tactical skills and the platform to learn more from outstanfing lecturers</p>
-            <a href="#" class="btn">learn more</a>
+            <a href="about.html" class="btn">learn more</a>
         </div>
 
     </div>
 
 </section>
+
 
 <!-- about section ends -->
 
@@ -82,7 +80,6 @@
 <section class="footer">
 
     <div class="share">
-        <a href="#" class="fab fa-facebook-f"></a>
         <a href="https://twitter.com/SamkeleBMabaso" class="fab fa-twitter"></a>
         <a href="https://www.instagram.com/samkelemabaso/" class="fab fa-instagram"></a>
         <a href="https://www.linkedin.com/in/samkhele-mabaso-0939041b2/" class="fab fa-linkedin"></a>
@@ -91,8 +88,8 @@
 
     <div class="links">
         <a href="#">home</a>
-        <a href="#">about</a>
-        <a href="#">contact</a>
+        <a href="about.html">about</a>
+        <a href="contact.html">contact</a>
     </div>
 
     <div class="credit">created by <span>Samkele Mabaso</span> | all rights reserved</div>
@@ -118,7 +115,17 @@
 
 
 <!-- custom js file link  -->
-<script src="js/script.js"></script>
+<script >
+    var icon = document.getElementById("icon");
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+            icon.src = "images/moon.png"
+        }else{
+            icon.src = "images/sun.png"
+        }
+}
+</script>
 
 </body>
 </html>
